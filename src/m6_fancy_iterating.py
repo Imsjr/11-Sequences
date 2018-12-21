@@ -51,12 +51,12 @@ def main():
 
     #run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
      #                                 sequence4)
-    run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
-                                       sequence4)
-    # run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
-    #                                     sequence4)
-    # run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
-    #                                     sequence4)
+    # run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
+    #                                   sequence4)
+    #run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
+    #                                   sequence4)
+    run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
+                                         sequence4)
     # run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
     # run_test_print_items_that_are_strings(sequence1, sequence2, sequence3,
     #                                       sequence4)
@@ -405,7 +405,8 @@ def print_all_items_backwards(sequence):
 ###############################################################################
 def print_items_at_odd_indices(sequence):
     for k in range(0,len(sequence),2):
-        print(sequence[k])
+        print(( ))
+
 
 
     """
@@ -430,6 +431,14 @@ def print_items_at_odd_indices(sequence):
 #   -- in this sample problem, the second half.
 ###############################################################################
 def print_items_in_second_half(sequence):
+    if len(sequence)==0:
+        return
+    # if len(sequence)/2%0:
+    #     for k in range (len(sequence)//2,len(sequence)):
+    #         print (sequence(k))
+    if len(sequence)/2%1:
+        for k in range ((len(sequence),(len(sequence)+1)/2)):
+            print (sequence[k])
     """
     Prints the items in the second half of the given sequence.
     For odd-length sequences, includes the middle item in the sequence.
